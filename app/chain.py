@@ -30,11 +30,6 @@ api_key = config["PINE_CONE_API_KEY"]
 openai_api_key=config["OPENAI_API_KEY"]
 cohere_api_key = config["COHERE_API_KEY"]
 #pc_index = config["INDEX_NAME"]
-print(f"openai api_key= {openai_api_key}")
-print(f"pinecone env_key = {env_key}")
-print(f"pinecone api_key = {api_key}")
-print("\n")
-
 
 # pinecone client and embeddings
 
