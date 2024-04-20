@@ -1,5 +1,8 @@
 # Langchain/Pinecone/RAG LLM Application 
 
+![LLMJupyter](https://github.com/jandog8990/Langchain-PineCone-RAG/assets/4309516/06c70fa4-cf79-47c5-967d-cb5d5b1aaceb)
+
+
 ## Installation
 
 Install the LangChain CLI, OpenAI and Pinecone CLI if you haven't yet
@@ -88,6 +91,9 @@ run langchain_chain_query.ipynb
 ## Launch Langchain Server 
 After launching the Langchain Server, go to `127.0.0.1:8000/pinecone-wiki/playground`
 to access the OpenAI chat module.
+
+![LLMApp](https://github.com/jandog8990/Langchain-PineCone-RAG/assets/4309516/15c65bef-ac79-4e16-8c62-73b141310203)
+
 
 ```bash
 cd app/
