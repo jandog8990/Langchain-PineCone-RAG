@@ -1,4 +1,4 @@
-# Langchain, Pinecone and RAG LLM Application 
+# Langchain/Pinecone/RAG LLM Application 
 
 ## Installation
 
@@ -76,7 +76,7 @@ python ParquetUpload.py
 ## Run Jupyter Notebook
 In the `app/` directory you will find a `langchain_chain_query.ipynb` script.
 This script runs your OpenAI RAG app locally. To check the outputs of your
-app you can navigate to `smith.langchain.com` and click on your project to
+app you can navigate to https://smith.langchain.com and click on your project to
 observe how your chat answers are generated.
 
 ```bash
