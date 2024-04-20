@@ -2,10 +2,16 @@
 
 ## Installation
 
-Install the LangChain CLI if you haven't yet
+Install the LangChain CLI, OpenAI and Pinecone CLI if you haven't yet
 
 ```bash
+pip install -U openai 
+pip install -U pinecone-client 
 pip install -U langchain-cli
+pip install -U langchain-core
+pip install -U langchain-cohere
+pip install -U langchain-community
+
 ```
 
 ## Adding packages
@@ -35,6 +41,10 @@ LangSmith will help us trace, monitor and debug LangChain applications.
 LangSmith is currently in private beta, you can sign up [here](https://smith.langchain.com/). 
 If you don't have access, you can skip this section
 
+```bash
+# install langsmith
+pip install langsmith
+```
 
 ```shell
 export LANGCHAIN_TRACING_V2=true
@@ -42,9 +52,33 @@ export LANGCHAIN_API_KEY=<your-api-key>
 export LANGCHAIN_PROJECT=<your-project>  # if not specified, defaults to "default"
 ```
 
+## Update your local .env file
+To manage Langchain, OpenAI and Pinecone objects you will need
+to create environment variables in your repo .env file
+
+```bash
+OPENAI_API_KEY=<your-api-key>
+PINE_CONE_API_KEY=<your-pinecone-api-key>
+COHERE_API_KEY=<your-cohere-api-key>
+INDEX_NAME=<your-pinecone-index-name>
+```
+
+## Upload data to Pinecone Serverless
+You will need to go to https://pinecone.io and setup a project. In your
+project you will setup a serverless index using my script below. This
+script will also upload Wikipedia training vector data to your index.
+
+```bash
+cd app/
+python ParquetUpload.py
+```
+
+
 ## Launch LangServe
 
 ```bash
+cd app/
+poetry install 
 langchain serve
 ```
 
