@@ -54,7 +54,7 @@ export LANGCHAIN_PROJECT=<your-project>  # if not specified, defaults to "defaul
 
 ## Update your local .env file
 To manage Langchain, OpenAI and Pinecone objects you will need
-to create environment variables in your repo .env file
+to create environment variables in your repo .env file.
 
 ```bash
 OPENAI_API_KEY=<your-api-key>
@@ -73,6 +73,14 @@ cd app/
 python ParquetUpload.py
 ```
 
+## Run Jupyter Notebook
+In the `app/` directory you will find a `langchain_chain_query.ipynb` script.
+
+```bash
+cd app/
+jupyter notebook
+run langchain_chain_query.ipynb
+```
 
 ## Launch LangServe
 
