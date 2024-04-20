@@ -27,7 +27,7 @@ def pipeline(user_input: str):
     )
     return result.choices[0].message.content
 
-resp = pipeline("Hello, world!")
+resp = pipeline("Hello, tell me what the future of AI holds") 
 print("Resp:")
 print(resp)
 print("\n")
